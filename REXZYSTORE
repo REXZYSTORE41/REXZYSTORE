@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b1c">
+  <meta name="description" content="REXZYSTORE - Toko digital dan key game.">
+  <title>REXZYSTORE | Toko Digital</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #f7f1ff;
+      background: #0b0812;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px 7%; display: flex;
+      justify-content: space-between; align-items: center;
+      border-bottom: 1px solid #332044;
+    }
+    .logo { color: #c78aff; font-weight: 900; font-size: 23px; }
+    .tag { color: #b9a9c9; font-size: 12px; }
+    main { max-width: 900px; margin: auto; padding: 45px 20px; }
+    .hero { text-align: center; margin-bottom: 38px; }
+    .hero h1 { font-size: clamp(32px, 7vw, 52px); margin-bottom: 12px; }
+    .hero h1 span { color: #c78aff; }
+    .hero p { color: #b9a9c9; line-height: 1.7; }
+    .product {
+      max-width: 480px; margin: auto; padding: 26px;
+      background: linear-gradient(145deg, #21152f, #120d1b);
+      border: 1px solid #70459b; border-radius: 20px;
+      box-shadow: 0 0 35px #9b45ff18;
+    }
+    .label {
+      display: inline-block; color: #d9b6ff;
+      background: #49276a; border-radius: 20px;
+      padding: 6px 11px; font-size: 12px;
+    }
+    .product h2 { margin-bottom: 8px; }
+    .desc { color: #b9a9c9; line-height: 1.6; }
+    .price { color: #d6a8ff; font-size: 30px; font-weight: bold; }
+    button {
+      width: 100%; padding: 14px; border: 0;
+      border-radius: 10px; color: #160c20;
+      background: #c78aff; font-size: 16px;
+      font-weight: bold; cursor: pointer;
+    }
+    button:hover { background: #d9b6ff; }
+    .notice {
+      margin-top: 18px; padding: 12px;
+      border: 1px solid #493455; border-radius: 10px;
+      color: #cbbbd8; font-size: 13px; line-height: 1.6;
+    }
+    footer {
+      text-align: center; padding: 25px;
+      color: #8f809d; border-top: 1px solid #332044;
+      font-size: 12px;
+    }
+    dialog {
+      width: min(90%, 400px); background: #1b1127;
+      color: white; border: 1px solid #70459b;
+      border-radius: 16px; padding: 24px;
+    }
+    dialog::backdrop { background: #000b; }
+    .secondary {
+      margin-top: 10px; background: #332044;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">REXZYSTORE</div>
+    <div class="tag">TOKO DIGITAL</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Upgrade Your <span>Experience.</span></h1>
+      <p>Selamat datang di REXZYSTORE.<br>
+      Temukan produk digital pilihanmu dengan mudah.</p>
+    </section>
+
+    <section class="product">
+      <span class="label">PRODUK DIGITAL</span>
+      <h2>Config Animasi Dreamspace</h2>
+      <p class="desc">
+        Key digital untuk produk Config Animasi Dreamspace.
+        Pastikan perangkatmu kompatibel sebelum membeli.
+      </p>
+      <div class="price">Rp13.000</div>
+      <p class="desc">1 key · Pembayaran sekali</p>
+      <button onclick="document.getElementById('checkout').showModal()">
+        Beli Sekarang
+      </button>
+      <div class="notice">
+        Pembayaran dan pengiriman key otomatis belum diaktifkan.
+        Jangan melakukan pembayaran melalui halaman demo ini.
+      </div>
+    </section>
+  </main>
+
+  <dialog id="checkout">
+    <h2>Konfirmasi Pembelian</h2>
+    <p>Config Animasi Dreamspace — Rp13.000</p>
+    <p class="desc">
+      Checkout belum tersedia. Sistem QRIS dan pengiriman key
+      akan diaktifkan setelah penyedia pembayaran terhubung.
+    </p>
+    <button onclick="document.getElementById('checkout').close()">
+      Mengerti
+    </button>
+  </dialog>
+
+  <footer>© 2026 REXZYSTORE · Toko Digital</footer>
+</body>
+</html>
