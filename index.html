@@ -1,8 +1,92 @@
 
-<!-- Tombol khusus order Config Animasi Dreamspace -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0712">
+<meta name="description" content="REXZYSTORE - Toko digital untuk produk dan key pilihan.">
+<title>REXZYSTORE — Digital Store</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0712;color:#fff;font-family:Arial,sans-serif}
+header{height:76px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #30203e;background:#100b19}
+.logo{font-weight:900;font-size:24px;letter-spacing:1px;color:#d2a1ff}
+nav a{color:#e9dcf5;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{text-align:center;padding:75px 20px 55px;background:radial-gradient(ellipse at top,#42215e 0%,#160e22 48%,#0b0712 80%)}
+.pill{display:inline-block;border:1px solid #70469b;border-radius:30px;padding:8px 15px;color:#e1c4ff;font-size:12px}
+h1{font-size:clamp(35px,7vw,64px);margin:22px 0 14px}
+h1 span{color:#ca8aff}
+.hero p{max-width:540px;margin:auto;color:#bcaecb;line-height:1.8}
+main{max-width:1050px;margin:auto;padding:35px 20px 70px}
+.section-title{text-align:center;margin:15px 0 28px}
+.section-title p{color:#ad9bbd}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{border:1px solid #47305b;border-radius:18px;background:linear-gradient(145deg,#21142e,#120d1a);padding:24px;box-shadow:0 12px 35px #0003}
+.product-icon{height:120px;border-radius:13px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,#39204e,#171020);margin-bottom:20px}
+.tag{font-size:11px;color:#dab5ff;background:#402455;padding:6px 10px;border-radius:20px}
+.card h3{font-size:21px;margin:18px 0 10px}
+.card p{color:#b8a8c6;font-size:14px;line-height:1.7;min-height:48px}
+.price{font-size:27px;color:#d3a0ff;font-weight:bold;margin:18px 0}
+button{width:100%;padding:14px;border:0;border-radius:10px;background:#c78aff;color:#180d21;font-weight:bold;font-size:15px;cursor:pointer}
+button:hover{background:#dfbdff}
+.notice{border:1px solid #483355;border-radius:12px;padding:15px;color:#bdaec9;font-size:13px;line-height:1.7;margin-top:25px}
+footer{border-top:1px solid #30203e;text-align:center;padding:27px;color:#9686a5;font-size:12px}
+dialog{background:#1a1025;color:white;border:1px solid #70469b;border-radius:16px;width:min(90%,400px);padding:25px}
+dialog::backdrop{background:#000b}
+dialog p{color:#c5b5d1;line-height:1.7}
+.close{margin-top:10px;background:#372445;color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">REXZYSTORE</div>
+  <nav><a href="#produk">Produk</a><a href="#info">Info</a></nav>
+</header>
+
+<section class="hero">
+  <span class="pill">✦ DIGITAL STORE</span>
+  <h1>Level Up Your <span>Experience.</span></h1>
+  <p>Selamat datang di REXZYSTORE. Temukan produk digital pilihan dengan tampilan simpel dan proses pembelian yang mudah.</p>
+</section>
+
+<main>
+  <section id="produk">
+    <div class="section-title">
+      <h2>Produk Pilihan</h2>
+      <p>Pilih produk yang ingin kamu beli.</p>
+    </div>
+    <div class="products">
+      <article class="card">
+        <div class="product-icon">✦</div>
+        <span class="tag">PRODUK DIGITAL</span>
+        <h3>Config Animasi Dreamspace</h3>
+        <p>Key digital Config Animasi Dreamspace. Pastikan produk kompatibel dengan perangkatmu.</p>
+        <div class="price">Rp13.000</div>
+        <button onclick="document.getElementById('checkout').showModal()">Pilih &amp; Beli</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="info" class="notice">
+    <strong>Informasi Pembelian</strong><br>
+    Harga untuk 1 key adalah Rp13.000. Checkout, pembayaran QRIS, verifikasi transaksi, dan pengiriman key otomatis belum aktif. Jangan melakukan pembayaran melalui halaman demo ini.
+  </section>
+</main>
+
+<dialog id="checkout">
+  <h2>Konfirmasi Pembelian</h2>
+  <p>Config Animasi Dreamspace — 1 key — Rp13.000.</p>
+  <p>Sistem pembayaran belum terhubung. Belum ada transaksi atau pengiriman key yang diproses.</p>
+  <button onclick="document.getElementById('checkout').close()">Mengerti</button>
+  <button class="close" onclick="document.getElementById('checkout').close()">Tutup</button>
+</dialog>
+
+<footer>© 2026 REXZYSTORE · Digital Store</footer>
+<!-- Tombol Order Lewat WA REXZYSTORE -->
 <div style="text-align:center; padding:18px 12px 24px;">
   <a
-    href="https://wa.me/6281234502445?text=Halo%20Admin%20REXZYSTORE%2C%20saya%20ingin%20membeli%20produk%20config%20animasi%20dreamspace."
+    href="https://wa.me/6281234502445?text=Halo%20Admin%20REXZYSTORE%2C%20saya%20ingin%20membeli%20produk%20config%20animasi%20dramspace."
     target="_blank"
     rel="noopener noreferrer"
     style="
@@ -14,10 +98,13 @@
       font-size:13px;
       font-weight:600;
       text-decoration:none;
+      box-shadow:0 3px 12px rgba(37,211,102,.22);
     "
   >
-    ☎ Order Config Dreamspace Lewat WA
+    ☎ Order Lewat WA
   </a>
 </div>
+
+
 </body>
 </html>
